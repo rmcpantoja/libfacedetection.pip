@@ -21,6 +21,8 @@ jobs:
         # env:
         #   CIBW_SOME_OPTION: value
         #    ...
+        env:
+          CIBW_PLATFORM: ${{ matrix.os }}
         with:
           package-dir: .
           output-dir: wheelhouse
