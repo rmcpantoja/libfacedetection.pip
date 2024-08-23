@@ -27,7 +27,7 @@ jobs:
           #package-dir: .
           #output-dir: wheelhouse
           #config-file: "{package}/pyproject.toml"
-          only: ${{ matrix.os }}
+          only: windows
 
       - uses: actions/upload-artifact@v3
         with:
