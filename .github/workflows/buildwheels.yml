@@ -24,9 +24,9 @@ jobs:
         # env:
         #  CIBW_PLATFORM: ${{ matrix.os }}
         with:
-          package-dir: .
-          output-dir: wheelhouse
-          config-file: "{package}/pyproject.toml"
+          #package-dir: .
+          #output-dir: wheelhouse
+          #config-file: "{package}/pyproject.toml"
           only: ${{ matrix.os }}
 
       - uses: actions/upload-artifact@v3
