@@ -64,13 +64,12 @@ test-requires = "pytest"
 test-command = "pytest {project}/tests"
 
 container-engine = "docker"
-skip = ["pp*", "*-win32", "*-manylinux_i686", "*-musllinux_*", "*-manylinux_aarch64", "*-manylinux_ppc64le", "*-manylinux_s390x"]
+skip = ["pp*", "*-manylinux_i686", "*-musllinux_*", "*-manylinux_aarch64", "*-manylinux_ppc64le", "*-manylinux_s390x"]
 manylinux-x86_64-image = "manylinux2014"
 manylinux-aarch64-image = "manylinux2014"
 
 
 [tool.cibuildwheel.windows]
-archs = ["AMD64"]
 before-build = [
     "pip install delvewheel",
     "if exist build rmdir /s /q build",
