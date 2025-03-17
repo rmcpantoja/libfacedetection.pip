@@ -64,7 +64,7 @@ test-requires = "pytest"
 test-command = "pytest {project}/tests"
 
 container-engine = "docker"
-skip = ["pp*", "*-manylinux_i686", "*-musllinux_*", "*-manylinux_aarch64", "*-manylinux_ppc64le", "*-manylinux_s390x"]
+skip = ["pp*", "*-manylinux_i686", "*-musllinux_*", "*-manylinux_aarch64", "*-manylinux_ppc64le", "*-manylinux_s390x", "cp36-*", "cp37-*", "cp38-*"]
 manylinux-x86_64-image = "manylinux2014"
 manylinux-aarch64-image = "manylinux2014"
 
